@@ -42,7 +42,7 @@ class Program
         if (toDelete != null) AvtoPark.Remove(toDelete);
         Show(AvtoPark, "После удаления ID=3");
 
-        // Отбор всех Ford
+      
         List<Avto> AvtoFords = AvtoPark.FindAll(x => x.Marka == "Ford");
         Show(AvtoFords, "Только автомобили Ford");
 
@@ -55,5 +55,6 @@ class Program
         });
         Show(AvtoPark, "После сортировки (пробег, ФИО)");
         Console.ReadKey();
+        Console.WriteLine("Выполнил: Локтев Артем 23ИС ");
     }
 }
